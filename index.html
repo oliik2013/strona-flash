@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Embedding Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .flash-container {
+            width: 640px;
+            height: 480px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flash Content Example</h1>
+    <div class="flash-container">
+        <!-- Using the object tag to embed Flash content -->
+        <object type="application/x-shockwave-flash" data="minecraft-skin-ragdoll.swf" width="640" height="480">
+            <param name="movie" value="minecraft-skin-ragdoll.swf" />
+            <param name="quality" value="high" />
+            <param name="wmode" value="transparent" />
+            <p>Alternative content for browsers that do not support Flash:</p>
+            <a href="https://ruffle.rs/">Get Adobe Flash Player</a>
+        </object>
+        
+        <!-- Alternatively, using the embed tag -->
+        <embed src="minecraft-skin-ragdoll.swf" width="640" height="480" quality="high" wmode="transparent">
+            <p>Alternative content for browsers that do not support Flash:</p>
+            <a href="https://ruffle.rs/">Get Adobe Flash Player</a>
+        </embed>
+    </div>
+</body>
+</html>
