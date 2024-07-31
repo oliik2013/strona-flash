@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<base>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,66 +18,25 @@
             margin: 0 auto;
         }
     </style>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.RufflePlayer.config = {
-            // Optional configuration
-        };
-        document.addEventListener("DOMContentLoaded", () => {
-            const ruffle = window.RufflePlayer.newest();
-            const elements = document.getElementsByClassName("ruffle-player");
-    
-            for (const element of elements) {
-                ruffle.createPlayer(element);
-            }
-        });
-    </script>
 </head>
 <body>
     <h1>Strona Flash (Ruffle)</h1>
     <p>Mój skin Minecraft Ragdoll</p>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.addEventListener("load", (event) => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            const container = document.getElementById("container");
-            player.load("minecraft-skin-ragdoll.swf");
-        });
-    </script>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-
+    <embed src="minecraft-skin-ragdoll.swf" width="640" height="480" quality="high" wmode="transparent">
 
     <p>Wyścigi</p>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.addEventListener("load", (event) => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            const container = document.getElementById("container");
-            player.load("auto-wyscigi.swf");
-        });
-    </script>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-
+    <embed src="auto-wyscigi.swf" width="640" height="480" quality="high" wmode="transparent">
 
     <p>Randomowa Piosenka</p>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.addEventListener("load", (event) => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            const container = document.getElementById("container");
-            player.load("random-sound.swf");
-        });
-    </script>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-
+    <embed src="random-sound.swf" width="640" height="480" quality="high" wmode="transparent">
         
     <p>Pobierz Flasha (Emulator):</p>
     <a href="https://ruffle.rs/">Emulator Flasha</a>
     <a href="https://apps.apple.com/pl/app/puffin-cloud-browser/id472937654?l=pl/">Emulator Flasha (na IOS)</a>
     <a href="https://archive.org/details/adobe-flash-player-32-0r-0-371-winax/">Flash (orginalny, niedziała z nowymi przeglądarkami)</a>
+        
+        <!-- Alternatively, using the embed tag -->
+    </div>
 </body>
+</base>
 </html>
