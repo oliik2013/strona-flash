@@ -36,15 +36,45 @@
 <body>
     <h1>Strona Flash (Ruffle)</h1>
     <p>Mój skin Minecraft Ragdoll</p>
-    <div class="ruffle-player" data-swf-url="minecraft-skin-ragdoll.swf"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container");
+            container.appendChild(player);
+            player.load("minecraft-skin-ragdoll.swf");
+        });
+    </script>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
 
     <p>Wyścigi</p>
-    <div class="ruffle-player" data-swf-url="auto-wyscigi.swf"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container");
+            container.appendChild(player);
+            player.load("auto-wyscigi.swf");
+        });
+    </script>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
 
     <p>Randomowa Piosenka</p>
-    <div class="ruffle-player" data-swf-url="random-sound.swf"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container");
+            container.appendChild(player);
+            player.load("random-sound.swf");
+        });
+    </script>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
         
     <p>Pobierz Flasha (Emulator):</p>
