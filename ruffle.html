@@ -18,17 +18,34 @@
         }
     </style>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer.config = {
+            // Optional configuration
+        };
+        document.addEventListener("DOMContentLoaded", () => {
+            const ruffle = window.RufflePlayer.newest();
+            const elements = document.getElementsByClassName("ruffle-player");
+    
+            for (const element of elements) {
+                ruffle.createPlayer(element);
+            }
+        });
+    </script>
 </head>
 <body>
     <h1>Strona Flash (Ruffle)</h1>
     <p>Mój skin Minecraft Ragdoll</p>
-    <ruffle-embed src="minecraft-skin-ragdoll.swf" width="640" height="480" quality="high" wmode="transparent"></ruffle-embed>
+    <div class="ruffle-player" data-swf-url="minecraft-skin-ragdoll.swf"></div>
+
 
     <p>Wyścigi</p>
-    <ruffle-embed src="auto-wyscigi.swf" width="640" height="480" quality="high" wmode="transparent"></ruffle-embed>
+    <div class="ruffle-player" data-swf-url="auto-wyscigi.swf"></div>
+
 
     <p>Randomowa Piosenka</p>
-    <ruffle-embed src="random-sound.swf" width="640" height="480" quality="high" wmode="transparent"></ruffle-embed>
+    <div class="ruffle-player" data-swf-url="random-sound.swf"></div>
+
         
     <p>Pobierz Flasha (Emulator):</p>
     <a href="https://ruffle.rs/">Emulator Flasha</a>
