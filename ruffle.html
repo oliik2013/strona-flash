@@ -46,10 +46,14 @@
             const container = document.getElementById("container");
             player.load({
                 // These are only a few example options:
-                url: "minecraft-skin-ragdoll.swf", // A string, indicating the SWF file to load (e.g. "movie.swf").
-                allowScriptAccess: false, // A boolean indicating whether the file is allowed to interact with the page through JavaScript.
+                url: "minecraft-skin-ragdoll.swf",
+                allowScriptAccess: false,
             });
-            container.appendChild(player);
+            container.appendChild({
+                // These are only a few example options:
+                url: "minecraft-skin-ragdoll.swf",
+                allowScriptAccess: false,
+            });
         });
     </script>
     <script src="https://unpkg.com/@ruffle-rs/ruffle" defer></script>
