@@ -44,12 +44,12 @@
             const ruffle = window.RufflePlayer.newest();
             const player = ruffle.createPlayer();
             const container = document.getElementById("container");
-            container.appendChild(player);
             player.load({
                 // These are only a few example options:
                 url: "minecraft-skin-ragdoll.swf", // A string, indicating the SWF file to load (e.g. "movie.swf").
                 allowScriptAccess: false, // A boolean indicating whether the file is allowed to interact with the page through JavaScript.
             });
+            container.appendChild(player);
         });
     </script>
     <script src="https://unpkg.com/@ruffle-rs/ruffle" defer></script>
