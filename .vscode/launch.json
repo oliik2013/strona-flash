@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open Website (ruffle.html)",
-            "url": "oliik2013.github.io/strona-flash/ruffle.html"
+            "url": "https://oliik2013.github.io/strona-flash/ruffle.html"
         }
     ]
 }
